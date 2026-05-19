@@ -162,3 +162,10 @@ let slideIndex = 1;
         setInterval(() => {
             plusSlides(1);
         }, 2000);
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
