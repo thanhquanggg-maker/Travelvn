@@ -1,0 +1,17 @@
+.menu-doc {
+  list-style: none;
+  width: 150px;
+  padding: 0;
+}
+
+.menu-doc li {
+  background-color: darkcyan;
+  line-height: 30px;
+  height: 40px;
+  border-bottom: solid white 1px;
+}
+
+.menu-doc li:hover {
+  font-style: italic;
+  background-color: lightblue;
+}
