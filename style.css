@@ -60,6 +60,48 @@ header {
     font-size: 2rem;
 }
 
+/* Nút menu mobile */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+    }
+
+    .menu a {
+        padding: 15px;
+        border-top: 1px solid #555;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
 /*giữ khung navbar*/
 .top-bar {
     background: rgba(255, 255, 255, 0.2);
