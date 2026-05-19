@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website du lịch</title>
+    <link rel="icon" type="image/x-icon" href="images/travel.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </link>
+</head>
+
+<body>
+    <div class="top-bar">
+        <header>
+            <div>
+                <a href="index.html" class="logo"><span class="icon">✈️</span> TravelVN</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Tìm kiếm địa điểm, tour, kinh nghiệm...">
+                <button type="button" id="search-btn">🔍</button>
+            </div>
+        </header>
+        <div class="menu">
+            <a href="index.html">🏠 Trang chủ</a>
+            <a href="place.html">📍 Địa điểm</a>
+            <a href="tour.html">🎯 Tour</a>
+            <a href="video.html"><i class="fa-solid fa-video" style="color: rgb(255, 0, 204);"></i> Trải nghiệm</a>
+            <a href="contact.html">📞 Liên hệ</a>
+            <a href="baitap.html"> Labs </a>
+            <a href="login.html">🔑 Đăng Nhập</a>
+        </div>
+    </div>
+     <div class="slideshow">
+        <div class="slidefade" style="display: block;">
+            <img src="images/anh1.jpg" style="width: 100%;">
+        </div>
+        <div class="slidefade" style="display: none;">
+            <img src="images/anh2.jpg" style="width: 100%;">
+        </div>
+        <div class="slidefade" style="display: none;">
+            <img src="images/anh3.jpg" style="width: 100%;">
+        </div>
+        <div class="slidefade" style="display: none;">
+            <img src="images/anh4.jpg" style="width: 100%;">
+        </div>
+        <div class="slidefade" style="display: none;">
+            <img src="images/anh5.jpg" style="width: 100%;">
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <section class="timkiem">
+        <h2>🌟 Vì sao chọn TravelVN?</h2>
+
+        <div class="timkiem-list">
+            <div class="timkiem-item">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h3>Địa điểm hấp dẫn</h3>
+                <p>Khám phá nhiều địa điểm nổi tiếng khắp Việt Nam.</p>
+            </div>
+
+            <div class="timkiem-item">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Giá ưu đãi</h3>
+                <p>Nhiều chương trình giảm giá và combo tiết kiệm.</p>
+            </div>
+
+            <div class="timkiem-item">
+                <i class="fa-solid fa-star"></i>
+                <h3>Đánh giá cao</h3>
+                <p>Được khách hàng tin tưởng và lựa chọn.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Về chúng tôi</h3>
+                <p>Website du lịch giúp bạn tìm kiếm và đặt tour dễ dàng.</p>
+            </div>
+
+            <div>
+                <h3>Liên hệ</h3>
+                <p> <i class="fa-solid fa-envelope"></i> Email: quangnot1@gmail.com</p>
+                <p> <i class="fa-solid fa-phone" style="color: rgb(0, 205, 144);"></i> Hotline: 086 833 6511</p>
+            </div>
+
+            <div>
+                <h3>Theo dõi</h3>
+                <p> <i class="fa-brands fa-facebook" style="color: blue;"></i> Facebook |
+                    <i class="fa-brands fa-instagram" style="color: rgb(255, 66, 97);"></i> Instagram |
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </p>
+            </div>
+        </div>
+
+        <p>© 2026 Travelvn</p>
+
+    </footer>
+    <button class="settings-toggle" id="settingsToggle" title="Cài đặt">⚙️</button>
+
+    <div class="settings-overlay" id="settingsOverlay"></div>
+
+    <div class="settings-panel" id="settingsPanel">
+        <button class="close-settings" id="closeSettings">✕</button>
+        <h3>⚙️ Cài đặt giao diện</h3>
+        <div class="setting-item">
+            <label>🌙 Dark Mode</label>
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeCheckbox">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <label>🔤 Cỡ chữ</label>
+            <select style="padding: 5px; border-radius: 8px;">
+                <option>Nhỏ</option>
+                <option selected>Vừa</option>
+                <option>Lớn</option>
+            </select>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
